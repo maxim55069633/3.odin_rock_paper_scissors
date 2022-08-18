@@ -4,20 +4,20 @@ This project is about the classic game "Rock Paper Scissors" using JavaScript. P
 
 a mistake I made:
 At first, I wrote 
-'''
+```
 function standardizeInput(Selection)
 {
     return Selection.toLowerCase().replace(Selection[0], Selection[0].toUpperCase() );
 }
-'''
+```
 but later I found I failed to change some input into the standard(first letter uppercase, the rest letter lowercase). For example Rock ends up like rock. This is because "Rock".toLowerCase() would be "rock". At this point, Selection[0] is still "R" since toLowerCase won't change the original string. It's impossible to find a "R" in the rock so our expectation is not met.
 so I modified this function like:
-'''
+```
 function standardizeInput(Selection)
 {
     return Selection.toLowerCase().replace(Selection[0].toLowerCase(), Selection[0].toUpperCase() );
 }
-'''
+```
 
 note:
 1.
