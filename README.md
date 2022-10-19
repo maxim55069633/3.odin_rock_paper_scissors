@@ -1,32 +1,16 @@
 # odin_rock_paper_scissors
 
-version 2.0
+[Task Description 1](https://www.theodinproject.com/lessons/foundations-rock-paper-scissors)
+[Task Description 2](https://www.theodinproject.com/lessons/foundations-revisiting-rock-paper-scissors)
 
-Add simple UI. Now users can select the elements by clicking on the images. They don't need to check the outcome via the console. 
+[Live Preview](https://maxim55069633.github.io/3.odin_rock_paper_scissors/)
 
-Disclaimer: all the images come from me.
+Classic game "rock paper scissors". Display the running score, and announce a winner of the game once one player reaches 5 points.
 
+In this project, I practice the basic javascript skills including: function, DOM manipulation, and Events.
 
----
+Screenshot:
 
-version 1.0
+1. ![Project Screenshot 1](./images/screenshot1.png)
 
-This project is about the classic game "Rock Paper Scissors" using JavaScript. Players can input their selection among the three options five times. Their input could be case-insensitive. Then the console will claim who is the winner.
-
-a mistake I made:
-At first, I wrote 
-```
-function standardizeInput(Selection)
-{
-    return Selection.toLowerCase().replace(Selection[0], Selection[0].toUpperCase() );
-}
-```
-but later I found I failed to change some input into the standard(first letter uppercase, the rest letter lowercase). For example Rock ends up like rock. This is because "Rock".toLowerCase() would be "rock". At this point, Selection[0] is still "R" since toLowerCase won't change the original string. It's impossible to find a "R" in the rock so our expectation is not met.
-
-so I modified this function like:
-```
-function standardizeInput(Selection)
-{
-    return Selection.toLowerCase().replace(Selection[0].toLowerCase(), Selection[0].toUpperCase() );
-}
-```
+2. ![Project Screenshot 2](./images/screenshot2.png)

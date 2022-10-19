@@ -31,11 +31,6 @@ function playAgain(winner)
     
     change.classList.add('play_again');
 
-    // let newScript=document.createElement("script");
-    // let inlineScript=document.createTextNode(`
-    // document.querySelector('button').addEventListener('click',reloadMygame)`);
-    // newScript.appendChild(inlineScript);
-    // change.appendChild(newScript);
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -107,7 +102,6 @@ function submitplayerchoice (e)
     const playerSelection=this.getAttribute('class');
     const computerSelection=getComputerChoice();
     playRound(playerSelection, computerSelection);
-
 }
 
 const mySelections= document.querySelectorAll('.threeoptions button');
